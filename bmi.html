@@ -5,14 +5,15 @@
     <title>bmi측정하기 </title>
     <script src="bml.js"></script>
     <script src ="kimVaildCheck.js"></script>
-    <link rel ="stylesheet" href="bmi.css">
+    <link rel="stylesheet" href="./static/bmi.css">
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 
 </head>
 <body align="center"> 
     <form name="bmiform" onsubmit="return calculateBMI();"
-    action="http://195.168.9.172:8808/bmicheck"  method="post">
-        <table border="3" class="bmifont">
+    action="http://195.168.9.172:8808/bmicheck"  method="post"
+    enctype="multipart/form-data">
+        <table border="3" class="bmifont"align="center">
             <tr align="center"> <td>비만도 검사</td></tr>
             <tr>
                 <td>NAME:<input name="name" maxlength="5"><p></p> </td>
