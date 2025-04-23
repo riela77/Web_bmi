@@ -1,0 +1,18 @@
+table {
+    border: 5px dashed #ff66c4;
+    background-color: #fff0f5;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px hotpink;
+    animation: float 3s ease-in-out infinite;
+    width: 350px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Fredoka:wght@400;600&display=swap');
+
+.bmifont{
+    resize:none;
+    font-family: 'Jua', sans-serif;
+    width: 300px;
+    height: 150px;
+    background-color: transparent;
+    font-size: 15pt;
+}

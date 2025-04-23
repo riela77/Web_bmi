@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <title>bmi측정하기 </title>
+    <script src="bml.js"></script>
+    <script src ="kimVaildCheck.js"></script>
+    <link rel ="stylesheet" href="bmi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+</head>
+<body align="center"> 
+    <form name="bmiform" onsubmit="return calculateBMI();"
+    action="http://195.168.9.172:8808/bmicheck"  method="post">
+        <table border="3" class="bmifont">
+            <tr align="center"> <td>비만도 검사</td></tr>
+            <tr>
+                <td>NAME:<input name="name" maxlength="5"><p></p> </td>
+            </tr>
+            <tr>
+                <td>HEIGHT:<input name="height" maxlength="4">cm<p></p></td>
+            </tr>
+            <tr>
+                <td>WEIGHT: <input name="weight" maxlength="4">kg<p></p></td>
+            </tr>
+            <tr>
+                <td align="center">PSA: <input name="psa" type="file"><p></p></td>
+            </tr>
+            <tr align="center"><td><button onclick="bmi_show();">검사하기</button></td></tr>
+
+        </table>
+        
+        
+    </form>
+</body>
+
+</html>
